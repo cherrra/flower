@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Заказать букет - Flower</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Шапка -->
@@ -23,7 +24,6 @@
                 </nav>
                 <div class="header-icons">
                     <a href="tel:+79991234567"><i class="fas fa-phone-alt"></i> +7 (999) 123-45-67</a>
-                    <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
                 </div>
                 <button class="hamburger" aria-label="Меню">
                     <i class="fas fa-bars"></i>
@@ -32,56 +32,102 @@
         </div>
     </header>
 
-    <!-- Форма заказа -->
-    <section class="order-form">
+    <!-- Блок заказа -->
+    <section class="order-section">
         <div class="container">
-            <h1 class="page-title">Заказать букет</h1>
-            <form id="orderForm">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name">Ваше имя*</label>
-                        <input type="text" id="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Телефон*</label>
-                        <input type="tel" id="phone" required>
+            <h1 class="page-title">Как заказать букет</h1>
+            
+            <div class="order-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Выберите букет</h3>
+                        <p>Посмотрите примеры наших работ в <a href="index.html#portfolio">галерее</a> или придумайте свой уникальный вариант</p>
                     </div>
                 </div>
                 
-                <div class="form-group">
-                    <label for="bouquet">Выберите букет</label>
-                    <select id="bouquet">
-                        <option value="romantic">Романтический букет (3 500 ₽)</option>
-                        <option value="spring">Весеннее настроение (2 800 ₽)</option>
-                        <option value="elegance">Элегантность (4 200 ₽)</option>
-                        <option value="custom">Индивидуальный букет</option>
-                    </select>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Позвоните нам</h3>
+                        <p>Обсудите детали заказа с нашим флористом по телефону</p>
+                        <a href="tel:+79991234567" class="btn btn-call">
+                            <i class="fas fa-phone-alt"></i> +7 (999) 123-45-67
+                        </a>
+                    </div>
                 </div>
                 
-                <div class="form-group">
-                    <label for="delivery-date">Дата доставки</label>
-                    <input type="date" id="delivery-date">
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Получите букет</h3>
+                        <p>Мы доставим ваш заказ в указанное время и место</p>
+                    </div>
                 </div>
-                
-                <div class="form-group">
-                    <label for="address">Адрес доставки</label>
-                    <input type="text" id="address">
+            </div>
+            
+            <div class="order-benefits">
+                <h2 class="section-subtitle">Почему стоит заказать у нас</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Свежие цветы</h3>
+                        <p>Работаем только с проверенными поставщиками и гарантируем свежесть</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <i class="fas fa-gift"></i>
+                        <h3>Бесплатная упаковка</h3>
+                        <p>Каждый букет оформляем в крафтовую бумагу и ленту бесплатно</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <i class="fas fa-car"></i>
+                        <h3>Быстрая доставка</h3>
+                        <p>Доставляем по городу в течение 2 часов после оформления заказа</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <h3>Индивидуальный подход</h3>
+                        <p>Создаем букеты с учетом всех ваших пожеланий</p>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Примеры букетов -->
+    <section class="bouquet-examples">
+        <div class="container">
+            <h2 class="section-title">Наши популярные букеты</h2>
+            <p class="section-subtitle">Нажмите на фото, чтобы узнать подробности по телефону</p>
+            
+            <div class="bouquet-grid">
+                <a href="tel:+79991234567" class="bouquet-card">
+                    <div class="bouquet-image" style="background-image: url('https://i.pinimg.com/736x/97/78/33/9778339cf8a1e1e1851e6b6ed4ce81c6.jpg');"></div>
+                    <div class="bouquet-info">
+                        <h3>Романтический</h3>
+                        <p>от 3 500 ₽</p>
+                    </div>
+                </a>
                 
-                <div class="form-group">
-                    <label for="message">Пожелания к букету</label>
-                    <textarea id="message" rows="4"></textarea>
-                </div>
+                <a href="tel:+79991234567" class="bouquet-card">
+                    <div class="bouquet-image" style="background-image: url('https://i.pinimg.com/736x/48/8b/9b/488b9b95779fdf4cf9a10121874ee0e2.jpg');"></div>
+                    <div class="bouquet-info">
+                        <h3>Весенний</h3>
+                        <p>от 2 800 ₽</p>
+                    </div>
+                </a>
                 
-                <div class="form-group">
-                    <label>
-                        <input type="checkbox" id="gift-wrap">
-                        Подарочная упаковка (+300 ₽)
-                    </label>
-                </div>
-                
-                <button type="submit" class="btn">Оформить заказ</button>
-            </form>
+                <a href="tel:+79991234567" class="bouquet-card">
+                    <div class="bouquet-image" style="background-image: url('https://i.pinimg.com/736x/6a/e8/5b/6ae85bdb45b4f161e6176b2419d1b34d.jpg');"></div>
+                    <div class="bouquet-info">
+                        <h3>Элегантный</h3>
+                        <p>от 4 200 ₽</p>
+                    </div>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -91,18 +137,22 @@
             <h2 class="section-title">Контакты</h2>
             <div class="contacts-grid">
                 <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
                     <h3>Адрес</h3>
-                    <p>г. Москва, ул. Цветочная, 15</p>
+                    <p>г. блаблабла, ул. блаблабла, 15</p>
                 </div>
                 <div class="contact-card">
+                    <i class="fas fa-phone-alt"></i>
                     <h3>Телефон</h3>
-                    <p>+7 (999) 123-45-67</p>
+                    <p><a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
                 </div>
                 <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
                     <h3>Email</h3>
-                    <p>info@florinka.ru</p>
+                    <p><a href="mailto:info@flower.ru">info@flower.ru</a></p>
                 </div>
                 <div class="contact-card">
+                    <i class="fas fa-clock"></i>
                     <h3>Часы работы</h3>
                     <p>Пн-Пт: 9:00 - 20:00</p>
                     <p>Сб-Вс: 10:00 - 18:00</p>
@@ -144,6 +194,7 @@
             </div>
         </div>
     </footer>
+
 
     <script src="js/script.js"></script>
 </body>
