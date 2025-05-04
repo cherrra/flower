@@ -1,32 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Обработка формы заказа
-    const orderForm = document.getElementById('orderForm');
-    if (orderForm) {
-        orderForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Собираем данные формы
-            const formData = {
-                name: document.getElementById('name').value,
-                phone: document.getElementById('phone').value,
-                bouquet: document.getElementById('bouquet').value,
-                date: document.getElementById('delivery-date').value,
-                address: document.getElementById('address').value,
-                message: document.getElementById('message').value,
-                giftWrap: document.getElementById('gift-wrap').checked
-            };
-            
-            // Здесь можно добавить отправку данных на сервер
-            console.log('Данные заказа:', formData);
-            
-            // Показываем сообщение об успехе
-            alert('Спасибо за ваш заказ! Мы свяжемся с вами в ближайшее время для подтверждения.');
-            
-            // Очищаем форму
-            orderForm.reset();
-        });
-    }
-    
+document.addEventListener('DOMContentLoaded', function() {    
     // Плавная прокрутка для якорных ссылок
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
