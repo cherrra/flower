@@ -1803,3 +1803,164 @@
     white-space: nowrap;
   }
 }
+
+/* Хлебные крошки */
+.breadcrumbs {
+  padding: 20px 0;
+  background-color: #f9f3f6;
+}
+
+.breadcrumbs ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumbs li {
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  content: '›';
+  margin-left: 10px;
+  color: #666;
+}
+
+.breadcrumbs a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+/* Заголовок категории */
+.category-header {
+  padding: 40px 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+.category-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: var(--dark-color);
+}
+
+.category-header p {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Букеты категории */
+.category-products {
+  padding: 40px 0;
+  background-color: #f9f3f6;
+}
+
+@media (max-width: 768px) {
+  .category-header h1 {
+      font-size: 2rem;
+  }
+  
+  .category-header p {
+      font-size: 1rem;
+  }
+}
+
+/* Стили для фильтров */
+.catalog-filters {
+  padding: 20px 0;
+  background-color: #fff;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 -5px;
+}
+
+.filter-tab {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #f8f8f8;
+  color: #555;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.filter-tab:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.filter-tab.active {
+  background-color: #e83e8c;
+  color: white;
+}
+
+/* Адаптивность фильтров */
+@media (max-width: 768px) {
+  .filter-tabs {
+    overflow-x: auto;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .filter-tabs::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Фоны секций */
+.bg-light-pink {
+  background-color: #fff5f9;
+}
+
+.bg-soft-green {
+  background-color: #f5fff9;
+}
+
+.catalog-header {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.catalog-title {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.catalog-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.catalog-cta {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.catalog-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.catalog-cta p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 25px;
+}
